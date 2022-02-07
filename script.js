@@ -1,6 +1,6 @@
 const body = document.body;
 const button = document.querySelector('button');
-const text = document.getElementsByTagName('p')
+const textColor = document.getElementById("rbg");
 
 button.addEventListener('click', changeBG)
 
@@ -9,12 +9,12 @@ function changeRGB() {
 }
 
 function changeBG() {
-    let color1 = changeBG();
-    let color2 = changeBG();
-    let color3 = changeBG();
+    let color1 = changeRBG();
+    let color2 = changeRBG();
+    let color3 = changeRBG();
 
     let rgb = `rgb(${color1}, ${color2}, ${color3})`
     body.style.backgroundColor = rgb;
 
-    text.innerText = rgb;
+    textColor.innerText = rgb;
 }
